@@ -1,0 +1,139 @@
+body {
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: #BA0C2F;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Estilos da Navegação */
+nav {
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar o menu */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #00843D;
+    border-bottom: 2px solid #BA0C2F;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionar sombra ao hover */
+}
+
+/* Estilos do Conteúdo Principal */
+main {
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+.content {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.text {
+    width: 60%;
+    background-color: #fff;
+    padding: 30px;
+    line-height: 1.6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Leve sombra para destaque */
+}
+
+.image {
+    width: 40%;
+    padding: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #00843D;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil no rodapé */
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content {
+        display: block;
+        text-align: center;
+    }
+
+    .text {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .img {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        padding: 10px 0;
+        font-size: 1.5rem;
+    }
+
+    .img {
+        width: 100%;
+        padding-top: 10px;
+    }
+}
